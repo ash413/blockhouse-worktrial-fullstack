@@ -7,8 +7,6 @@ export interface cryptoData {
 }
 
 export const fetchCryptoData = async (): Promise<cryptoData[]> => {
-    const response = await axios.get(
-        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,ripple,litecoin,cardano'
-    );
+    const response = await axios.get(process.env.NEXT_PUBLIC_API_URL as string);
     return response.data;
 }
