@@ -40,7 +40,7 @@ cd web-app
 2. Install dependencies:
 ```bash
 npm install
-# or
+OR
 yarn install
 ```
 
@@ -52,7 +52,7 @@ NEXT_PUBLIC_API_URL=https://api.coingecko.com/api/v3
 4. Start the development server:
 ```bash
 npm run dev
-# or
+OR
 yarn dev
 ```
 
